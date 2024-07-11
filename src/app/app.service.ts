@@ -1,8 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { Iroot_return } from './app.interface';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getHello(): Iroot_return {
+    return {
+      'message' : 'Identity Reconciliation Service Running...'
+    };
   }
 }
